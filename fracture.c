@@ -5,8 +5,9 @@
 // Class: COP 3223C, Professor Parra
 // Purpose: The purpose of this assignment is to write 
 // a program that can house multiple internal functions
-// Input: 
-// Output:  
+// Input: coordinates of 2 seperate points
+// Output:The distance, perimeter, area, height, and width 
+// of the circle
 // //********************************************************
 
 #include <stdio.h>
@@ -15,7 +16,7 @@
 
 
 // Function to calculate the distance between two points
-double calculateDistance() {
+double calculatedistance() {
     double x1, y1, x2, y2;
     
     
@@ -41,7 +42,7 @@ double calculateperimeter(){
     double diameter = calculatedistance();
     double perimeter = PI * diameter;
 
-    printf("You entered point 1 coordinates as: x1 = %.2f; y1 = %.2f\n", 0 , 0);
+    printf("You entered point 1 coordinates as: x1 = %.2f; y1 = %.2f\n", 0.0 , 0.0);
     printf("You entered point 2 coordinates as: x2 = %.2f; y2 = %.2f\n", diameter, diameter);
     printf("The perimeter of the city is %.2f\n", perimeter);
 
@@ -52,7 +53,7 @@ double calculatearea(){
     double diameter = calculatedistance();
     double radius = diameter / 2;
     double area = PI * radius * radius;
-    printf("You entered point 1 coordinates as: x1 = %.2f; y1 = %.2f\n", 0, 0);
+    printf("You entered point 1 coordinates as: x1 = %.2f; y1 = %.2f\n", 0.0, 0.0);
     printf("You entered point 2 coordinates as: x2 = %.2f; y2 = %.2f\n", diameter, diameter);
     printf("The area of the city is %.2f\n", area);
 
@@ -62,7 +63,7 @@ double calculatearea(){
 double calculatewidth(){
     double width = calculatedistance();
 
-    printf("You entered point 1 coordinates as: x1 = %.2f; y1 = %.2f\n", 0, 0);
+    printf("You entered point 1 coordinates as: x1 = %.2f; y1 = %.2f\n", 0.0, 0.0);
     printf("You entered point 2 coordinates as: x2 = %.2f; y2 = %.2f\n", width, width);
     printf("The width of the city is %.2f\n", width);
     
@@ -72,7 +73,7 @@ double calculatewidth(){
 double calculateheight(){
     double height = calculatedistance();
 
-    printf("You entered point 1 coordinates as: x1 = %.2f; y1 = %.2f\n", 0, 0);
+    printf("You entered point 1 coordinates as: x1 = %.2f; y1 = %.2f\n", 0.0, 0.0);
     printf("You entered point 2 coordinates as: x2 = %.2f; y2 = %.2f\n", height, height);
     printf("The height of the city is %.2f\n", height);
     
